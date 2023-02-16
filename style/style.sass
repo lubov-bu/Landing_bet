@@ -1,0 +1,171 @@
+*
+  box-sizing: border-box
+
+body, h1
+  font-family: "Work Sans", sans-serif
+  margin: 0 auto
+
+h1, h2
+  text-transform: uppercase
+  text-align: center
+  color: white
+  font-style: italic
+
+h1
+  background: #C6217D
+  font-size: 2vw
+  padding: 5px 10px
+  margin-bottom: 15px
+
+h2
+  font-size: 1.5vw
+  margin-bottom: 5px
+
+.main,
+.main__logo,
+.main__block,
+.main__head
+  width: 100%
+
+.main,
+.main__logo,
+.main__block,
+.main__block__circle,
+.main__head
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.main
+  height: 100%
+  position: fixed
+  background: url("http://195.133.75.184/images/test/bg1.jpg") center center no-repeat fixed
+  background-size: cover
+  &__logo > img
+    max-height: 37px
+    max-width: 100%
+  &__head
+    padding-top: 30px
+  &__block
+    height: 100%
+    justify-content: center
+    &__circle
+      background-image: url("http://195.133.75.184/images/test/bg_whell1.png")
+      background-size: cover
+      padding: 5%
+    &__innercircle
+      width: 33vw
+      margin-top: -4%
+    &__pl
+      width: 13vw
+      top: 9%
+    &__button
+      width: 8vw
+      top: 48%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &__girl
+      bottom: 0
+      left: 4%
+      width: 44vw
+    &__planet1
+      top: -16%
+      left: 10%
+      width: 9vw
+    &__planet2
+      right: 4%
+      bottom: 15%
+      width: 19vw
+    &__planet3
+      top: 3%
+      right: 19%
+    &__planet4
+      bottom: 8%
+      left: 38%
+  &__images
+    position: absolute
+
+.main > img
+  object-fit: cover
+  max-width: 100%
+
+.container,
+.main__head,
+.main__block,
+.main__block__circle
+  position: relative
+
+@media screen and (max-width: 1300px)
+  h1
+    font-size: 3vw
+  h2
+    font-size: 2vw
+  .main
+    &__block
+      &__circle
+        padding: 8%
+      &__innercircle
+        width: 40vw
+      &__pl
+        width: 18vw
+      &__girl
+        width: 46vw
+        bottom: 0
+        left: 0
+
+@media screen and (max-width: 900px)
+  h1
+    font-size: 4vw
+  h2
+    font-size: 3vw
+  .main
+    &__block
+      justify-content: flex-start
+      &__circle
+        padding: 10%
+      &__innercircle
+        width: 52vw
+      &__pl
+        width: 22vw
+      &__button
+        width: 12vw
+      &__girl
+        width: 60vw
+        bottom: -11%
+        left: 0
+
+@media screen and (max-width: 550px)
+  h1
+    font-size: 7vw
+  h2
+    font-size: 6vw
+  .main
+    &__block
+      &__pl
+        width: 38vw
+      &__button
+        width: 16vw
+      &__circle
+        padding: 17%
+      &__innercircle
+        width: 77vw
+      &__girl
+        width: 105vw
+        bottom: -11%
+        left: 0
+      &__planet1
+        top: -34%
+        left: -3%
+        width: 14vw
+      &__planet2
+        right: -10%
+        bottom: -8%
+        width: 40vw
+      &__planet3
+        top: -30%
+        right: 4%
+        width: 9vw
+      &__planet4
+        left: 0
+        top: 0
+        width: 9vw

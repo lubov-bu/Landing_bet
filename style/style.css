@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1 {
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+h1 {
+  background: #C6217D;
+  font-size: 2vw;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5vw;
+  margin-bottom: 5px;
+}
+
+.main,
+.main__logo,
+.main__block,
+.main__head {
+  width: 100%;
+}
+
+.main,
+.main__logo,
+.main__block,
+.main__block__circle,
+.main__head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  position: fixed;
+  background: url("http://195.133.75.184/images/test/bg1.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+.main__logo > img {
+  max-height: 37px;
+  max-width: 100%;
+}
+.main__head {
+  padding-top: 30px;
+}
+.main__block {
+  height: 100%;
+  justify-content: center;
+}
+.main__block__circle {
+  background-image: url("http://195.133.75.184/images/test/bg_whell1.png");
+  background-size: cover;
+  padding: 5%;
+}
+.main__block__innercircle {
+  width: 33vw;
+  margin-top: -4%;
+}
+.main__block__pl {
+  width: 13vw;
+  top: 9%;
+}
+.main__block__button {
+  width: 8vw;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main__block__girl {
+  bottom: 0;
+  left: 4%;
+  width: 44vw;
+}
+.main__block__planet1 {
+  top: -16%;
+  left: 10%;
+  width: 9vw;
+}
+.main__block__planet2 {
+  right: 4%;
+  bottom: 15%;
+  width: 19vw;
+}
+.main__block__planet3 {
+  top: 3%;
+  right: 19%;
+}
+.main__block__planet4 {
+  bottom: 8%;
+  left: 38%;
+}
+.main__images {
+  position: absolute;
+}
+
+.main > img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.container,
+.main__head,
+.main__block,
+.main__block__circle {
+  position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  .main__block__circle {
+    padding: 8%;
+  }
+  .main__block__innercircle {
+    width: 40vw;
+  }
+  .main__block__pl {
+    width: 18vw;
+  }
+  .main__block__girl {
+    width: 46vw;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  .main__block {
+    justify-content: flex-start;
+  }
+  .main__block__circle {
+    padding: 10%;
+  }
+  .main__block__innercircle {
+    width: 52vw;
+  }
+  .main__block__pl {
+    width: 22vw;
+  }
+  .main__block__button {
+    width: 12vw;
+  }
+  .main__block__girl {
+    width: 60vw;
+    bottom: -11%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  .main__block__pl {
+    width: 38vw;
+  }
+  .main__block__button {
+    width: 16vw;
+  }
+  .main__block__circle {
+    padding: 17%;
+  }
+  .main__block__innercircle {
+    width: 77vw;
+  }
+  .main__block__girl {
+    width: 105vw;
+    bottom: -11%;
+    left: 0;
+  }
+  .main__block__planet1 {
+    top: -34%;
+    left: -3%;
+    width: 14vw;
+  }
+  .main__block__planet2 {
+    right: -10%;
+    bottom: -8%;
+    width: 40vw;
+  }
+  .main__block__planet3 {
+    top: -30%;
+    right: 4%;
+    width: 9vw;
+  }
+  .main__block__planet4 {
+    left: 0;
+    top: 0;
+    width: 9vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
