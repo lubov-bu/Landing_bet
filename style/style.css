@@ -25,14 +25,6 @@ h2 {
   margin-bottom: 5px;
 }
 
-.disable {
-  display: none;
-}
-
-.unable {
-  display: flex;
-}
-
 .container,
 .main__head,
 .main__block,
@@ -54,7 +46,7 @@ h2 {
 .popup__text,
 .popup,
 .main__head,
-.wrapper__dark {
+.wrapper__popup {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -97,6 +89,7 @@ h2 {
   top: 9%;
 }
 .main__block__button {
+  z-index: 6;
   width: 8vw;
   top: 48%;
   left: 50%;
@@ -134,12 +127,14 @@ h2 {
   max-width: 100%;
 }
 
-.wrapper__dark {
+.wrapper__popup, .wrapper__dark {
+  justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  justify-content: center;
+}
+.wrapper__dark {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .popup {
@@ -161,7 +156,7 @@ h2 {
   color: rgb(255, 217, 83);
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 0;
+  max-width: 350px;
 }
 .popup__text > p {
   font-size: 20px;
@@ -204,6 +199,10 @@ h2 {
     left: 0;
   }
 }
+.invisible {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .main__head > h1 {
     font-size: 4vw;
@@ -298,8 +297,8 @@ h2 {
 }
 @media screen and (max-width: 490px) {
   .popup__text > h1 {
-    font-size: 30px;
-    margin-bottom: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   .popup__text > p {
     font-size: 16px;
@@ -308,7 +307,7 @@ h2 {
   }
   .popup__text > button {
     height: 50px;
-    width: 80%;
+    width: 60%;
   }
 }
 

@@ -20,12 +20,6 @@ h2
   font-size: 1.5vw
   margin-bottom: 5px
 
-.disable
-  display: none
-
-.unable
-  display: flex
-
 .container,
 .main__head,
 .main__block,
@@ -45,7 +39,7 @@ h2
 .popup__text,
 .popup,
 .main__head,
-.wrapper__dark
+.wrapper__popup
   display: flex
   align-items: center
   flex-direction: column
@@ -78,6 +72,7 @@ h2
       width: 13vw
       top: 9%
     &__button
+      z-index: 6
       width: 8vw
       top: 48%
       left: 50%
@@ -107,12 +102,15 @@ h2
   object-fit: cover
   max-width: 100%
 
-.wrapper__dark
-  width: 100%
-  height: 100%
-  background-color: rgba(0, 0, 0, 0.6)
-  position: absolute
-  justify-content: center
+.wrapper
+    &__popup,
+    &__dark
+      justify-content: center
+      width: 100%
+      height: 100%
+      position: absolute
+    &__dark
+      background-color: rgba(0, 0, 0, 0.6)
 
 .popup
   position: relative
@@ -130,7 +128,7 @@ h2
     color: rgba(255, 217, 83, 1)
     font-size: 42px
     font-weight: 600
-    margin-bottom: 0
+    max-width: 350px
   &__text > p
     font-size: 20px
     max-width: 300px
@@ -165,6 +163,9 @@ h2
         width: 46vw
         bottom: 0
         left: 0
+
+.invisible
+  display: none
 
 @media screen and (max-width: 900px)
   .main
@@ -244,12 +245,12 @@ h2
 @media screen and (max-width: 490px)
   .popup
     &__text > h1
-      font-size: 30px
-      margin-bottom: 0
+      font-size: 24px
+      margin-bottom: 10px
     &__text > p
       font-size: 16px
       max-width: 250px
       margin-bottom: 5px
     &__text > button
       height: 50px
-      width: 80%
+      width: 60%

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -31,7 +31,9 @@
                             <img src="/images/innercircle2.png" class="main__block__innercircle" alt="innercircle">
                         </div>
                         <img src="/images/plashka2.png" class="main__images main__block__pl" alt="Gift">
-                        <img src="/images/buttom2.png" class="main__images main__block__button" alt="Button">
+                        <a href="#" class="main__images main__block__button" onclick="showPopup()">
+                            <img src="/images/buttom2.png" class="main__images main__block__button" alt="Button">
+                        </a>
                     </div>
                     <img src="/images/devushka1.png" class="main__images main__block__girl" alt="Girl">
                     <img src="/images/shar011.png" class="main__images main__block__planet1" alt="Planet">
@@ -42,15 +44,19 @@
             </div>
         </div>
     </div>
-    <div class="wrapper__dark">
+    <div class="wrapper__popup invisible">
+        <div class="wrapper__dark" onclick="showPopup()"></div>
         <div class="popup">
             <img src="/images/poup1.png" class="popup__img" alt="Popup">
             <div class="popup__text">
-                <h1>ganaste!</h1>
-                <p>Te espera un bonde hasta S/.1,000!</p>
-                <button>llevar</button>
+                <h1 class="popup__h1">ganaste!</h1>
+                <p class="popup__ph">Te espera un bonde hasta S/.1,000!</p>
+                <button class="popup__button" onclick="nextText()">llevar</button>
             </div>
         </div>
     </div>
 </body>
+
+<script src="main.js"></script>
+
 </html>
